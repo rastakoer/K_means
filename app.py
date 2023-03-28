@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 # ---------------------------------------------------------------------
 # Config streamlit
 #-----------------------------------------------------------------------------------
-st.set_page_config(page_title="Predict heart", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="Kmeans", page_icon=":tada:", layout="wide")
 
 
 # ---------------------------------------------------------------------
@@ -52,3 +52,8 @@ if uploaded_file is not None:
     with col2:
         st.subheader('Image clustering')
         st.image(d_image.astype(np.uint8))
+
+else : 
+    st.header("Segmentation d'image")
+    st.markdown("- Telacharger votre fichier depuis la sidebar")
+    st.markdown("- Choisissez le nombre de segmentation voulues")
